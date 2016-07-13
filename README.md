@@ -1,5 +1,8 @@
-electron-packager-plugin-non-proprietary-codecs-ffmpeg
+Electron Packager Plugin: Non-proprietary Codecs FFMPEG
 ---------------------------
+[![Build Status](https://travis-ci.org/orionhealth/electron-packager-plugin-non-proprietary-codecs-ffmpeg.svg?branch=master)](https://travis-ci.org/orionhealth/electron-packager-plugin-non-proprietary-codecs-ffmpeg)
+[![npm](https://img.shields.io/npm/v/electron-packager-plugin-non-proprietary-codecs-ffmpeg.svg?maxAge=2592000)](https://www.npmjs.com/package/electron-packager-plugin-non-proprietary-codecs-ffmpeg)
+[![license](https://img.shields.io/github/license/orionhealth/electron-packager-plugin-non-proprietary-codecs-ffmpeg.svg?maxAge=2592000)]()
 
 # Usage
 
