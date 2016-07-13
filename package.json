@@ -9,7 +9,7 @@
     "pretest": "npm run compile",
     "prewatch": "npm run compile",
     "test": "eslint src && npm run test-unit",
-    "test-unit": "mocha --ui bdd ./test/**/*_spec.js --require babel-register -R spec-xunit-file --timeout 120000",
+    "test-unit": "mocha --ui bdd ./test/**/*_spec.js --require babel-register -R spec-xunit-file --timeout 2400000",
     "watch": "watch -p \"src/**/*.js\" -c \"npm run compile\""
   },
   "keywords": [],

@@ -16,7 +16,7 @@ const defaultPackageConf = {
 };
 
 const testPlatform = (platform) =>
-  describe('When using the hook', () => {
+  describe(`When using the hook on ${platform}`, () => {
     before((done) => {
       packager(Object.assign({}, defaultPackageConf, { platform }), done);
     });
