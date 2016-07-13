@@ -18,7 +18,7 @@ const moveFFMPEG = (targetPath, platform) =>
 
       // If we are copying to the source we can stop immediately
       if (libPath === libTargetPath) {
-        console.log('Loaded FFMPEG successfully');
+        if (!process.env.TESTING) console.log('Loaded FFMPEG successfully');
         return resolve();
       }
 
@@ -27,7 +27,7 @@ const moveFFMPEG = (targetPath, platform) =>
 
       moveFile(libPath, libTargetPath, (moveErr) => {
         if (moveErr) return reject(moveErr);
-        console.log('Loaded FFMPEG successfully');
+        if (!process.env.TESTING) console.log('Loaded FFMPEG successfully');
         resolve();
       });
     });

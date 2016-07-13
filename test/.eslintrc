@@ -1,0 +1,12 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": true
+  },
+  "rules": {
+    "consistent-return": 0,
+    "no-unused-expressions": 0
+  }
+}

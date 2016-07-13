@@ -15,7 +15,7 @@ const afterExtractHook = (buildPath, electronVersion, platform, arch, done) => {
     .then(extractFFMPEG(buildPath))
     .then(moveFFMPEG(libPath, platform))
     .catch((err) => {
-      console.error('Failed to load FFMPEG', err);
+      if (!process.env.TESTING) console.error('Failed to load FFMPEG', err);
       done(new Error(err));
     })
     .then(() => done());
