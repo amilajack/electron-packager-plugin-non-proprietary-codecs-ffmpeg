@@ -1,13 +1,15 @@
-os:
-  - linux
+sudo: false
 
 language: node_js
+
 node_js:
-  - "4.4.0"
-  - "6.1.0"
+  - 6
+  - 4
 
-script:
-  - npm run test
+cache:
+  directories:
+    - node_modules
 
-notifications:
-  email: false
+install:
+  - npm i -g npm@latest
+  - npm install
